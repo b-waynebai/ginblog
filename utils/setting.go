@@ -32,6 +32,8 @@ func init() {
 		os.Exit(1)
 	}
 	LoadDatabase(file)
+	LoadServer(file)
+	LoadUploadFile(file)
 }
 
 func LoadServer(file *ini.File) {
